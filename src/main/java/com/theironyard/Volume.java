@@ -30,11 +30,14 @@ public class Volume {
      *
      * Note: This method may NOT use the multiplication operator, `*`.
      *
-     * @param edge The length of an edge of the cube
+     // @param edge The length of an edge of the cube
      * @return The volume of a cube.
      */
     // todo: create the cube() method as described above
-
+    public static double cube(double side){
+        double volume = Math.pow(side, 3);
+        return volume;
+    }
 
     /**
      * Create a method named cone(). This method should be static and publicly
@@ -57,7 +60,10 @@ public class Volume {
      * @return The volume of the cone
      */
     // todo: create the cone() method as described above
-
+    public static double cone(double radius, double height){
+        double volume = Math.PI*Math.pow(radius, 2)* (height /3);
+        return volume;
+    }
 
     /**
      * Create a method named sphere(). This method should be static and publicly
@@ -79,6 +85,9 @@ public class Volume {
      * @return
      */
     // todo: create a method to calculate the area of a sphere
-
+    public static double sphere(double radius){
+        double volume_sphere = (4.0/3.0)*Math.PI*Math.pow(radius, 3);
+        return volume_sphere;
+    }
 
 }
